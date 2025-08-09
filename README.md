@@ -13,7 +13,3 @@ Stage 1 focuses only on the HTML foundation.
 - **Modal**: Empty `<div>` for future detailed pop-ups.
 - **Semantic Tags**: Used for clean, accessible markup.
 
-## Future Plans
-- Add CSS for timeline layout and dark/light mode.
-- Populate with real data and images.
-- Implement filters and modal details.
