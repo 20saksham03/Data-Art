@@ -4,41 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Extinction Timeline</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- HEADER -->
-    <header>
-        <figure id="logo">
-            <img src="logo.png" alt="Extinction Timeline Logo" width="50" height="50">
-            <figcaption>Extinction Timeline</figcaption>
-        </figure>
-        <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Extinction Timeline Logo" class="logo">
+            <h1>Animal Extinction Timeline</h1>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
     </header>
 
     <!-- NAV / FILTERS -->
-    <nav>
-        <!-- Example future filters: All | Mammals | Birds | Reptiles -->
+    <nav class="filters">
+        <button class="filter-btn">All</button>
+        <button class="filter-btn">Mammals</button>
+        <button class="filter-btn">Birds</button>
+        <button class="filter-btn">Reptiles</button>
     </nav>
 
     <!-- MAIN -->
     <main>
-        <section id="timeline">
-            <!-- Example placeholder article -->
-            <article>
-                <h2>Dodo Bird (Extinct ~1662)</h2>
-                <figure>
-                    <img src="placeholder.jpg" alt="Dodo Bird">
-                    <figcaption>Once native to Mauritius</figcaption>
-                </figure>
-                <p>The Dodo is a famous example of human-driven extinction.</p>
+        <section id="timeline" class="timeline">
+            <article class="event">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <h2>Dodo Bird <span class="year">(1662)</span></h2>
+                    <figure>
+                        <img src="dodo.jpg" alt="Dodo Bird">
+                        <figcaption>Once native to Mauritius.</figcaption>
+                    </figure>
+                    <p>The Dodo is a famous example of human-driven extinction.</p>
+                </div>
+            </article>
+
+            <article class="event">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <h2>Tasmanian Tiger <span class="year">(1936)</span></h2>
+                    <figure>
+                        <img src="tasmanian_tiger.jpg" alt="Tasmanian Tiger">
+                        <figcaption>Also known as the Thylacine.</figcaption>
+                    </figure>
+                    <p>Native to Tasmania, this carnivorous marsupial became extinct in the 20th century.</p>
+                </div>
             </article>
         </section>
     </main>
 
     <!-- MODAL -->
-    <div id="modal">
-        <!-- Pop-up details in later stages -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Animal Details</h2>
+            <p>More information will appear here later.</p>
+        </div>
     </div>
 
 </body>
