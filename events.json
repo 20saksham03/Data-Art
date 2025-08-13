@@ -1,0 +1,104 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "year": 1662,
+      "title": "Dodo Bird",
+      "description": "The Dodo was a flightless bird endemic to the island of Mauritius. Due to hunting by humans and introduced animals, along with habitat destruction, the Dodo became extinct less than a century after its discovery by Europeans. It has become an icon of human-caused extinction.",
+      "imageURL": "https://commons.wikimedia.org/wiki/Special:FilePath/Dronte_dodo_Raphus_cucullatus.jpg",
+      "category": "Birds",
+      "location": "Mauritius",
+      "cause": "Hunting and habitat destruction"
+    },
+    {
+      "id": 2,
+      "year": 1936,
+      "title": "Tasmanian Tiger",
+      "description": "The Thylacine, also known as the Tasmanian Tiger, was the largest carnivorous marsupial of modern times. Native to Australia and New Guinea, it became extinct on the mainland around 2000 years ago but survived in Tasmania until 1936. The last known individual died in captivity at Hobart Zoo.",
+      "imageURL": "https://commons.wikimedia.org/wiki/Special:FilePath/Tasmanian_tiger.jpg",
+      "category": "Mammals",
+      "location": "Tasmania",
+      "cause": "Hunting bounties and disease"
+    },
+    {
+      "id": 3,
+      "year": 1914,
+      "title": "Passenger Pigeon",
+      "description": "Once the most abundant bird in North America with populations in the billions, the Passenger Pigeon was driven to extinction through massive commercial hunting and deforestation. The last known individual, named Martha, died at the Cincinnati Zoo in 1914.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/7/71/Passenger_pigeon_shoots.jpg",
+      "category": "Birds",
+      "location": "North America",
+      "cause": "Overhunting and habitat loss"
+    },
+    {
+      "id": 4,
+      "year": 1768,
+      "title": "Steller's Sea Cow",
+      "description": "Steller's Sea Cow was a massive marine mammal, related to the dugong and manatee. Discovered in 1741 near the Commander Islands, it was hunted to extinction within 27 years by fur traders and seal hunters. These gentle giants could reach up to 9 meters in length.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Rhytina_gigas.jpg",
+      "category": "Mammals",
+      "location": "Commander Islands",
+      "cause": "Overhunting for meat and oil"
+    },
+    {
+      "id": 5,
+      "year": 1883,
+      "title": "Quagga",
+      "description": "The Quagga was a subspecies of the plains zebra that lived in South Africa. It had distinctive brown and white stripes only on the front part of its body. The last wild Quagga was shot in 1878, and the last captive individual died in Amsterdam Zoo in 1883.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Quagga_photo.jpg",
+      "category": "Mammals",
+      "location": "South Africa",
+      "cause": "Hunting and competition with livestock"
+    },
+    {
+      "id": 6,
+      "year": 1844,
+      "title": "Great Auk",
+      "description": "The Great Auk was a large, flightless seabird native to the North Atlantic. Standing about 85 cm tall, it was an excellent swimmer and diver. Hunted extensively for its feathers, meat, and oil, the last confirmed pair was killed on Eldey Island, Iceland, in 1844.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Great_auk.jpg",
+      "category": "Birds",
+      "location": "North Atlantic",
+      "cause": "Overhunting for feathers and food"
+    },
+    {
+      "id": 7,
+      "year": 2012,
+      "title": "Pinta Island Tortoise",
+      "description": "The Pinta Island Tortoise was a subspecies of Galápagos tortoise. The last known individual, Lonesome George, died in 2012, marking the end of this subspecies. George became a symbol of conservation efforts and lived to be over 100 years old at the Charles Darwin Research Station.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/65/Lonesome_George_in_profile.jpg",
+      "category": "Reptiles",
+      "location": "Galápagos Islands",
+      "cause": "Habitat destruction and introduced species"
+    },
+    {
+      "id": 8,
+      "year": 1952,
+      "title": "Caribbean Monk Seal",
+      "description": "The Caribbean Monk Seal was native to the Caribbean Sea and Gulf of Mexico. These seals were extensively hunted for their oil, and their beach habitats were disturbed by human activity. The last confirmed sighting was in 1952, though they weren't declared extinct until 2008.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Caribbean_monk_seal.jpg",
+      "category": "Mammals",
+      "location": "Caribbean Sea",
+      "cause": "Hunting and habitat disturbance"
+    },
+    {
+      "id": 9,
+      "year": 1627,
+      "title": "Aurochs",
+      "description": "The Aurochs was a large wild ox that was the ancestor of domestic cattle. Standing up to 1.8 meters tall, these powerful animals roamed across Europe, Asia, and North Africa. The last known individual died in Poland's Jaktorów Forest in 1627, ending thousands of years of coexistence with humans.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Aurochs.jpg",
+      "category": "Mammals",
+      "location": "Europe, Asia, North Africa",
+      "cause": "Hunting and habitat conversion"
+    },
+    {
+      "id": 10,
+      "year": 1875,
+      "title": "Falkland Islands Wolf",
+      "description": "The Falkland Islands Wolf, also known as the Falkland Islands Fox, was the only native land mammal of the Falkland Islands. It was fearless of humans, which made it easy prey for settlers who hunted it for its valuable pelt. The last individual was killed in 1876.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Dusicyon_culpaeus_lycoides.jpg",
+      "category": "Mammals",
+      "location": "Falkland Islands",
+      "cause": "Hunting for pelts"
+    }
+  ]
+}
