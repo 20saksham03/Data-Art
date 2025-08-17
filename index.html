@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Extinction Timeline</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Interactive timeline showcasing extinct animal species and their impact on biodiversity">
+    <meta name="description" content="Interactive timeline showcasing extinct animal species built with TypeScript">
+    <meta name="keywords" content="extinction, timeline, animals, typescript, interactive">
+    <meta name="author" content="Saksham">
     <link rel="icon" href="https://commons.wikimedia.org/wiki/Special:FilePath/Extinction_Symbol.svg" type="image/svg+xml">
 </head>
 <body>
@@ -39,9 +41,9 @@
             <p>Loading extinction timeline...</p>
         </div>
 
-        <!-- Timeline section (will be populated by JavaScript) -->
+        <!-- Timeline section (will be populated by TypeScript) -->
         <section id="timeline" class="timeline" aria-label="Timeline of extinct animals">
-            <!-- Events will be dynamically loaded here by JavaScript -->
+            <!-- Events will be dynamically loaded here by TypeScript -->
             <!-- Fallback content for when JavaScript is disabled -->
             <noscript>
                 <div class="no-js-message">
@@ -63,8 +65,18 @@
         </div>
     </div>
 
-    <!-- JavaScript - Load at end of body for better performance -->
-    <script src="script.js"></script>
+    <!-- TypeScript compiled JavaScript - Load as ES module -->
+    <script type="module" src="./dist/index.js"></script>
+
+    <!-- Fallback for browsers that don't support ES modules -->
+    <script nomodule>
+        document.getElementById('timeline').innerHTML = `
+            <div class="error-message">
+                <h3>⚠️ Browser Not Supported</h3>
+                <p>This timeline requires a modern browser that supports ES modules. Please update your browser to view the content.</p>
+            </div>
+        `;
+    </script>
 
 </body>
 </html>
