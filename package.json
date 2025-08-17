@@ -1,0 +1,33 @@
+{
+  "name": "animal-extinction-timeline",
+  "version": "1.0.0",
+  "description": "Interactive timeline showcasing extinct animal species with TypeScript",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "rebuild": "npm run clean && npm run build",
+    "serve": "npx http-server . -p 3000 -o",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "timeline",
+    "extinction",
+    "typescript",
+    "animals",
+    "interactive"
+  ],
+  "author": "Saksham",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.0",
+    "@types/node": "^20.0.0",
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
