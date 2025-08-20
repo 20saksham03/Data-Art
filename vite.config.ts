@@ -1,23 +1,33 @@
-# Create new React app with Vite
-npm create vite@latest animal-extinction-timeline-react -- --template react-ts
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 
-# Navigate to project
-cd animal-extinction-timeline-react
-
-# Install dependencies
-npm install
-
-# Install additional dependencies for our timeline
-npm install @types/react @types/react-dom
-
-# Optional: Add utility libraries
-npm install clsx
-
-# Development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, './src'),
+      '@/components': resolve(__dirname, './src/components'),
+      '@/hooks': resolve(__dirname, './src/hooks'),
+      '@/types': resolve(__dirname, './src/types'),
+      '@/utils': resolve(__dirname, './src/utils'),
+      '@/styles': resolve(__dirname, './src/styles'),
+      '@/data': resolve(__dirname, './src/data')
+    }
+  },
+  server: {
+    port: 3000,
+    open: true
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+    target: 'esnext'
+  },
+  css: {
+    modules: {
+      localsConvention: 'camelCase'
+    }
+  }
+})
