@@ -1,33 +1,30 @@
 {
-  "name": "animal-extinction-timeline",
+  "name": "animal-extinction-timeline-react",
+  "private": true,
   "version": "1.0.0",
-  "description": "Interactive timeline showcasing extinct animal species with TypeScript",
-  "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "dev": "tsc --watch",
-    "clean": "rm -rf dist",
-    "rebuild": "npm run clean && npm run build",
-    "serve": "npx http-server . -p 3000 -o",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
     "type-check": "tsc --noEmit"
   },
-  "keywords": [
-    "timeline",
-    "extinction",
-    "typescript",
-    "animals",
-    "interactive"
-  ],
-  "author": "Saksham",
-  "license": "MIT",
-  "devDependencies": {
-    "typescript": "^5.2.0",
-    "@types/node": "^20.0.0",
-    "http-server": "^14.1.1"
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "clsx": "^2.0.0"
   },
-  "engines": {
-    "node": ">=16.0.0"
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
   }
 }
