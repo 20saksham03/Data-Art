@@ -15,20 +15,20 @@ const EventMarker: React.FC<EventMarkerProps> = ({
     onClick(event);
   };
 
-  const handleKeyDown = (event: React.KeyboardEvent): void => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
+  const handleKeyDown = (keyEvent: React.KeyboardEvent): void => {
+    if (keyEvent.key === 'Enter' || keyEvent.key === ' ') {
+      keyEvent.preventDefault();
       onClick(event);
     }
   };
 
-  const handleImageError = (event: React.SyntheticEvent<HTMLImageElement>): void => {
-    const img = event.currentTarget;
+  const handleImageError = (imgEvent: React.SyntheticEvent<HTMLImageElement>): void => {
+    const img = imgEvent.currentTarget;
     img.style.display = 'none';
   };
 
-  const handleLearnMoreClick = (event: React.MouseEvent): void => {
-    event.stopPropagation();
+  const handleLearnMoreClick = (clickEvent: React.MouseEvent): void => {
+    clickEvent.stopPropagation();
     onClick(event);
   };
 
