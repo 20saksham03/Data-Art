@@ -1,70 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Extinction Timeline</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Interactive timeline showcasing extinct animal species and their impact on biodiversity">
-    <link rel="icon" href="https://commons.wikimedia.org/wiki/Special:FilePath/Extinction_Symbol.svg" type="image/svg+xml">
-</head>
-<body>
-
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="logo-container">
-            <!-- IMG LINK with fallback -->
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Extinction_Symbol.svg" 
-                 alt="Extinction Timeline Logo" 
-                 class="logo"
-                 onerror="this.style.display='none'">
-            <h1>Animal Extinction Timeline</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://commons.wikimedia.org/wiki/Special:FilePath/Extinction_Symbol.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive timeline showcasing extinct animal species built with React and TypeScript" />
+    <meta name="keywords" content="extinction, timeline, animals, react, typescript, interactive" />
+    <meta name="author" content="Saksham" />
+    <title>Animal Extinction Timeline - React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Fallback for browsers without JavaScript -->
+    <noscript>
+      <div style="
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        min-height: 100vh; 
+        text-align: center; 
+        padding: 2rem;
+        background: #f5f5f5;
+        font-family: Arial, sans-serif;
+      ">
+        <div style="
+          background: white; 
+          padding: 3rem; 
+          border-radius: 12px; 
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          max-width: 500px;
+        ">
+          <h2 style="color: #2f4f4f; margin-bottom: 1rem;">JavaScript Required</h2>
+          <p style="color: #666; line-height: 1.6;">
+            This interactive timeline requires JavaScript to display content. 
+            Please enable JavaScript in your browser to explore the extinction timeline.
+          </p>
         </div>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle between light and dark theme">🌙</button>
-    </header>
-
-    <!-- NAV / FILTERS -->
-    <nav class="filters" role="navigation" aria-label="Filter timeline by animal category">
-        <button class="filter-btn active" data-category="All">All</button>
-        <button class="filter-btn" data-category="Mammals">Mammals</button>
-        <button class="filter-btn" data-category="Birds">Birds</button>
-        <button class="filter-btn" data-category="Reptiles">Reptiles</button>
-    </nav>
-
-    <!-- MAIN -->
-    <main>
-        <!-- Loading indicator (will be hidden once data loads) -->
-        <div id="loading" class="loading-indicator">
-            <div class="loading-spinner"></div>
-            <p>Loading extinction timeline...</p>
-        </div>
-
-        <!-- Timeline section (will be populated by JavaScript) -->
-        <section id="timeline" class="timeline" aria-label="Timeline of extinct animals">
-            <!-- Events will be dynamically loaded here by JavaScript -->
-            <!-- Fallback content for when JavaScript is disabled -->
-            <noscript>
-                <div class="no-js-message">
-                    <h3>JavaScript Required</h3>
-                    <p>This timeline requires JavaScript to display the interactive content. Please enable JavaScript in your browser to view the extinction timeline.</p>
-                </div>
-            </noscript>
-        </section>
-    </main>
-
-    <!-- MODAL -->
-    <div id="modal" class="modal hidden" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
-        <div class="modal-content">
-            <button class="close-btn" aria-label="Close modal">&times;</button>
-            <div class="modal-body">
-                <h2 id="modal-title">Animal Details</h2>
-                <p>Loading event details...</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript - Load at end of body for better performance -->
-    <script src="script.js"></script>
-
-</body>
+      </div>
+    </noscript>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
